@@ -1,11 +1,14 @@
-import './App.css';
-import Main from'./components/Main/Main.js'
+import "./App.css";
+import Main from "./components/Main/Main.js";
+import { BidProvider } from "./components/context/Bidding.js";
 
 function App() {
   return (
-    <div>
-      <Main></Main>
-    </div>
+    <BidProvider>
+      <div>
+        <Main></Main>
+      </div>
+    </BidProvider>
   );
 }
 export default App;
